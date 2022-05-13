@@ -1,26 +1,13 @@
-## Как запустить приложение
+Приложение принимает на вход 2 файла:
 
-На хосте должен быть установлен maven
-    
-    cd /opt
-    wget https://www-eu.apache.org/dist/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz
-    tar xzf apache-maven-3.6.3-bin.tar.gz
-    ln -s apache-maven-3.6.3 maven
-    vi /etc/profile.d/maven.sh
-    С содержимым
-    export M2_HOME=/opt/maven
-    export PATH=${M2_HOME}/bin:${PATH}
+1) Журнал входа-выхода
+<img width="639" alt="image" src="https://user-images.githubusercontent.com/72603507/168401492-e178eb9d-68dd-4518-bbb0-8ad77822ebf2.png">
 
+2) Реестр опубликованных работ
+<img width="668" alt="image" src="https://user-images.githubusercontent.com/72603507/168401517-bd0d4f44-fcab-471c-a4b3-a09eb1b96328.png">
 
-` docker pull zoltannz/hadoop-ubuntu:2.8.1`
+Генерация происходит с помошью скрипта
 
-` docker run --name hadoop-psql -p 2122:2122 -p 8020:8020 -p 8030:8030 -p 8040:8040 -p 8042:8042 -p 8088:8088 -p 9000:9000 -p 10020:10020 -p 19888:19888 -p 49707:49707 -p 50010:50010 -p 50020:50020 -p 50070:50070 -p 50075:50075 -p 50090:50090 -t zoltannz/hadoop-ubuntu:2.8.1`
+<img width="870" alt="image" src="https://user-images.githubusercontent.com/72603507/168401545-3536563a-6a4b-46c4-8166-e9f0a383b803.png">
 
-
-В новом терминале в папке scripts выполнить `./startHadoopContainer.sh hadoop-psql` 
-
-`./start.sh database_name`
-
-### Cхема взаимодействия компонентов
-![Scheme](scheme.png)
-
+Далее эти файлы
