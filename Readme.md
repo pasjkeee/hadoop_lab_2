@@ -10,4 +10,19 @@
 
 <img width="870" alt="image" src="https://user-images.githubusercontent.com/72603507/168401545-3536563a-6a4b-46c4-8166-e9f0a383b803.png">
 
-Далее эти файлы
+Загружаем сгенерированный input в hdfs
+
+```
+hdfs dfs -put input
+```
+Далее эти файлы считываются в программе
+<img width="909" alt="image" src="https://user-images.githubusercontent.com/72603507/168401687-22d08e0d-f1ad-4957-8e40-3684277b6c7b.png">
+
+Журнал входа-выхода редьюсится в JavaRDD по шаблону [key: humanId/univercity/year]: spenTimeInYear
+Реестр опубликованных работ редьюсится в JavaRDD по шаблону [key: humanId/univercity/year]: numOfWorks
+
+И далее она матчатся по ключу и выводятся в файл
+
+
+Тесты:
+<img width="1768" alt="image" src="https://user-images.githubusercontent.com/72603507/168401781-1d553d3b-020b-43ec-acda-ecc48fbcaa93.png">
