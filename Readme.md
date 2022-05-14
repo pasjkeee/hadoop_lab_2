@@ -24,6 +24,16 @@ export HADOOP_CONF_DIR=$HADOOP_PREFIX/etc/hadoop
 export PATH=$PATH:/spark-2.3.1-bin-hadoop2.7/bin
 
 ```
+
+
+Запуск сборки проекта
+
+```
+git clone https://github.com/pasjkeee/hadoop_lab_2.git
+cd hadoop_lab_2
+mvn clean install
+```
+
 Приложение принимает на вход 2 файла:
 
 1) Журнал входа-выхода
